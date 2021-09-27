@@ -39,10 +39,10 @@ const backendDependencies = {
  * `/openmrs/spa/hello`.
  */
 function setupOpenMRS() {
-  const moduleName = '@openmrs/esm-template-app';
+  const moduleName = '@pih/esm-legacyui-navbar-app';
 
   const options = {
-    featureName: 'hello-world',
+    featureName: 'legacyui-navbar-app',
     moduleName,
   };
 
@@ -51,8 +51,8 @@ function setupOpenMRS() {
   return {
     pages: [
       {
-        load: getAsyncLifecycle(() => import('./hello'), options),
-        route: 'hello',
+        load: getAsyncLifecycle(() => import('./navbar'), options),
+        route: 'navbar',
       },
     ],
   };

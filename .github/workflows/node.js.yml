@@ -10,8 +10,8 @@ on:
       - created
 
 env:
-  ESM_NAME: "@openmrs/esm-template-app"
-  JS_NAME: "openmrs-esm-template-app.js"
+  ESM_NAME: "@pih/esm-legacyui-navbar-app"
+  JS_NAME: "pih-esm-legacyui-navbar-app.js"
 
 jobs:
   build:

@@ -1,0 +1,118 @@
+#pageBody {
+  position: relative;
+  min-height: 100%;
+}
+#userBar {
+  color: #333333;
+  line-height: 26px;
+  margin: 0px;
+  padding-right: 5px;
+  padding-top: 15%;
+  position: absolute;
+  right: 5px;
+  text-align: right;
+  top: 0;
+  z-index: 10;
+}
+
+* {
+  font-family: Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif;
+}
+
+#userBar span.firstChild {
+  border-left-style: none;
+}
+
+#userBar > span:first-child {
+  border-left-style: none;
+}
+#userBar span {
+  border-left: 1px solid #333333;
+  padding: 0 5px 0 5px;
+}
+#userBar span {
+  border-left: 1px solid #333333;
+  padding: 0 5px 0 5px;
+}
+#userBar span a {
+  color: red;
+}
+#banner {
+  padding-top: 15%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  z-index: 6;
+  width: 100%;
+}
+#logosmall {
+  float: left;
+  margin-left: 49px;
+  margin-top: 2px;
+  position: absolute;
+}
+img {
+  float: left;
+  vertical-align: top;
+}
+
+#bannerbar {
+  text-align: center;
+  margin-top: 12px;
+  width: 100%;
+}
+#logocell {
+  width: 61px;
+}
+img.logoreduced61 {
+  width: 61px;
+  height: 61px;
+}
+
+
+.barsmall {
+  background-image: url("http://192.168.33.21:8080/openmrs/images/openmrs_green_bar_repeat.gif");
+  background-size: auto 100%;
+  height: auto;
+  /* height: 27px; */
+  margin-left: 0px;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  color: #ffffff;
+}
+img.barroundreduced50 {
+  margin-left: -5px;
+  margin-top: 0px;
+}
+.navList {
+  padding: 5px 0 2px 0;
+  margin: 0px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+.navList li.firstChild {
+  border-left-style: none;
+}
+.navList > li:first-child {
+  border-left-style: none;
+}
+.navList li {
+  padding: 0 15px 0 18px;
+  margin-top: 0px;
+  border-left: 2px solid white;
+  display: inline;
+  line-height: 1.0em;
+  font-size: 1.3em;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  vertical-align: middle;
+}
+.navList li a{
+  text-decoration:none;
+  color:#ffffff;
+}
+#barcell {
+  vertical-align: middle;
+  padding-left: 5px;
+  
+}
