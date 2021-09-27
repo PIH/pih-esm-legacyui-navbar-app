@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './navbar.css';
 import { getLoggedInUser } from './navbar.resource';
+import pic from './pic.png';
+
 const NavBar = () => {
   const [loggedInUser, setLoggedInUser] = React.useState(Object());
 
@@ -44,11 +46,7 @@ const NavBar = () => {
               </td>
               <td id={styles['barcell']}>
                 <div className={styles.barsmall}>
-                  <img
-                    src="http://192.168.33.21:8080/openmrs/images/openmrs_green_bar.gif"
-                    alt=""
-                    className={styles.barroundreduced50}
-                  />
+                  <img src={pic} alt="" className={styles.barroundreduced50} />
                   <ul className={styles.navList}>
                     <li id={styles['homeNavLink']} className={styles.firstChild}>
                       <a href="/openmrs">Home</a>
