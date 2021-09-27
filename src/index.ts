@@ -21,10 +21,7 @@ const importTranslation = require.context('../translations', false, /.json$/, 'l
  * installed. The keys are the part of the module name after
  * `openmrs-module-`; e.g., `openmrs-module-fhir2` becomes `fhir2`.
  */
-const backendDependencies = {
-  fhir2: '^1.2.0',
-  'webservices.rest': '^2.2.0',
-};
+const backendDependencies = {};
 
 /**
  * This function performs any setup that should happen at microfrontend
