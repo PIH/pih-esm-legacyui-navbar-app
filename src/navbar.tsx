@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './navbar.css';
 import { getLoggedInUser } from './navbar.resource';
-const navbar = () => {
+const NavBar = () => {
   const [loggedInUser, setLoggedInUser] = React.useState(Object());
 
   React.useEffect(() => {
     getLoggedInUser().then(setLoggedInUser);
-  });
+  }, []);
   return (
     <div>
       <div id={styles['userBar']}>
@@ -38,6 +38,7 @@ const navbar = () => {
               <td id={styles['logocell']}>
                 <img
                   src="http://192.168.33.21:8080/openmrs/images/openmrs_logo_white.gif"
+                  alt=""
                   className={styles.logoreduced61}
                 />
               </td>
@@ -45,6 +46,7 @@ const navbar = () => {
                 <div className={styles.barsmall}>
                   <img
                     src="http://192.168.33.21:8080/openmrs/images/openmrs_green_bar.gif"
+                    alt=""
                     className={styles.barroundreduced50}
                   />
                   <ul className={styles.navList}>
@@ -76,4 +78,4 @@ const navbar = () => {
     </div>
   );
 };
-export default navbar;
+export default NavBar;
