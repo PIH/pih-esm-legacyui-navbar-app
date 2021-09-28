@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './navbar.css';
 import { getLoggedInUser } from './navbar.resource';
-import pic from './pic.png';
-
+import openmrslogotextsmall from './images/openmrs_logo_text_small.png';
+import openmrslogowhite from './images/openmrs_logo_white.gif';
+import openmrsgreenbar from './images/openmrs_green_bar.gif';
 const NavBar = () => {
   const [loggedInUser, setLoggedInUser] = React.useState(Object());
 
@@ -28,25 +29,18 @@ const NavBar = () => {
       <div id={styles['banner']}>
         <a href="/openmrs/index.htm">
           <div id={styles['logosmall']}>
-            <img
-              src="http://192.168.33.21:8080/openmrs/moduleResources/legacyui/images/openmrs_logo_text_small.png"
-              alt="OpenMRS Logo"
-            />
+            <img src={openmrslogotextsmall} alt="OpenMRS Logo" />
           </div>
         </a>
         <table id={styles['bannerbar']}>
           <tbody>
             <tr>
               <td id={styles['logocell']}>
-                <img
-                  src="http://192.168.33.21:8080/openmrs/images/openmrs_logo_white.gif"
-                  alt=""
-                  className={styles.logoreduced61}
-                />
+                <img src={openmrslogowhite} alt="" className={styles.logoreduced61} />
               </td>
               <td id={styles['barcell']}>
                 <div className={styles.barsmall}>
-                  <img src={pic} alt="" className={styles.barroundreduced50} />
+                  <img src={openmrsgreenbar} alt="" className={styles.barroundreduced50} />
                   <ul className={styles.navList}>
                     <li id={styles['homeNavLink']} className={styles.firstChild}>
                       <a href="/openmrs">Home</a>
@@ -55,7 +49,7 @@ const NavBar = () => {
                       <a href="/openmrs/findPatient.htm"> Find/Create Patient</a>
                     </li>
                     <li id={styles['dictionaryNavLink']}>
-                      <a href="/openmrs/dictionary">Dictionary</a>
+                      <a href="/openmrs/dictionary/index.htm">Dictionary</a>
                     </li>
                     <li>
                       <a href="/openmrs//cohortBuilder.list">Cohort Builder</a>
