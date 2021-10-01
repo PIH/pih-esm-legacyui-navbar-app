@@ -49,7 +49,7 @@ function setupOpenMRS() {
     pages: [
       {
         load: getAsyncLifecycle(() => import('./navbar'), options),
-        route: /.*/,
+        route: 'pathology',
       },
     ],
   };

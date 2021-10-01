@@ -46,7 +46,10 @@ const NavBar = () => {
                       <a href="/openmrs">Home</a>
                     </li>
                     <li id={styles['findPatientNavLink']}>
-                      <a href="/openmrs/findPatient.htm"> Find/Create Patient</a>
+                      <a href="/openmrs/findPatient.htm"> Find Patient</a>
+                    </li>
+                    <li>
+                      <a href="/openmrs//module/rwandaprimarycare/login/login.form">Create Patient</a>
                     </li>
                     <li id={styles['dictionaryNavLink']}>
                       <a href="/openmrs/dictionary/index.htm">Dictionary</a>
@@ -56,9 +59,6 @@ const NavBar = () => {
                     </li>
                     <li>
                       <a href="/openmrs/module/reporting/dashboard/index.form">Reporting</a>
-                    </li>
-                    <li id={styles['administrationNavLink']}>
-                      <a href="/openmrs/admin">Administration</a>
                     </li>
                   </ul>
                 </div>
