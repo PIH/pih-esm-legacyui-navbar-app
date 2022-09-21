@@ -17,8 +17,9 @@ const NavBar = () => {
           Currently logged in as {loggedInUser.display}
         </span>
         <span id={styles['userLogout']}>
-          <a href="/openmrs/logout"> log out</a>
+          <a href="/openmrs/ms/logout"> log out</a>
         </span>
+        {console.log('testsssssssssssssssss')}
         <span>
           <a href="/openmrs/options.form"> My Profile </a>
         </span>

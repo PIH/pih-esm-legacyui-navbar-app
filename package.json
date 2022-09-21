@@ -1,13 +1,13 @@
 {
   "name": "@pih/esm-legacyui-navbar-app",
-  "version": "1.0.0",
+  "version": "1.0.1-pre.01",
   "license": "MPL-2.0",
   "description": "A RefApp-styled navbar compatible with the standard styleguide",
   "browser": "dist/pihesm-legacyui-navbar-app.js",
   "main": "src/index.ts",
   "source": true,
   "scripts": {
-    "start": "openmrs develop --backend https://imb.pih-emr.org:6464/",
+    "start": "openmrs develop --backend http://192.168.33.21:8080/",
     "serve": "webpack serve --mode=development",
     "build": "webpack --mode production",
     "analyze": "webpack --mode=production --env analyze=true",
